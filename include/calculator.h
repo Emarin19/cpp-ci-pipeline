@@ -8,8 +8,5 @@ public:
     double subtract(double, double);
     double divide(double, double);
     double multiply(double, double);
-    int age;
-    int id;
-    double salary:
 };
 #endif 
