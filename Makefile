@@ -3,6 +3,7 @@ C_FLAGS := -std=c++17 -Wall -Wextra -g
 
 BIN		:= bin
 SRC		:= src
+TEST    := test
 INCLUDE	:= include
 LIB		:= lib
 
@@ -22,5 +23,5 @@ clean:
 run: all
 	./$(BIN)/$(EXECUTABLE)
 
-$(BIN)/$(EXECUTABLE): $(SRC)/*.cpp
+$(BIN)/$(EXECUTABLE): $(SRC)/*.cpp $(TEST)/*.cpp
 	$(CC) $(C_FLAGS) -I$(INCLUDE) -L$(LIB) $^ -o $@ $(LIBRARIES)
