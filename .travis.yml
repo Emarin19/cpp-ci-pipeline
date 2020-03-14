@@ -1,4 +1,3 @@
-
 language: c++
 
 addons:
@@ -7,11 +6,6 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - g++-5
-
-  sonarcloud:
-    organization: "sebas-mora28"
-    token:
-      secure: "qBlFiNe6BbZxeSa4zKJNuMLI5qrgktzUFaXvEzDKlrLKnN434UlYfODFAzO3skgv8rHwySEB2B7IrMdDM0BPEDOd4/ip8+OxSQqOa0UCgNYUWuQQmGjnusdcm6TL+7BrW6qhKTLqLYOmEw7A80iFuxO4SatHNxOJDD4zDblxp6XDB/EXgZmh5YlIBCuflWYLpPfTcrHbLx31W/4sCHWdC4yZ90r6nN0bmHsVYCBvW7THjqYQT4be3jEtVzuElBaFrfpQtGzJcq6nllvpdS3UNzICP6mNKkWEsOxEXYAXIhVRJ1BZH/6oZYYjRm4DzP8939pEoDVKz+aJDqguUgE/3Xp0KnsJC+OUDLGJnDT1NAxNfAdejwHtVoPHWEHiqwkqkQeuRB70jTd90nEhkX0jqPL20XwxR2GEY/0Eo6WTKU2NvXrFgawKwbdLlVzCr7Xgjky/r5SSK9SIHBKdni23BjyGpy0aNtSCBTzWN9qbMhXb9HHdypaCncw/QTA7QgXw8XpH/r/v84ndWotCmk0uqzNlYJtZt79eIaQzDUSmByR5j/5vW8eKRmq0LYdIMgyy7oT+dWXfWHEyOVYnRnCgBk5wUBt7EFEJfTe5BWiSw4c/1v+aeZpKriFn6Ply9xWZiev2CuZW+w41FOMQU7NqLysJpGR0bn6uL8ScCM2mujI="
 
 script:
   - CXX=/usr/bin/g++-5 CC=/usr/bin/gcc-5 cmake .
