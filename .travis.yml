@@ -1,4 +1,4 @@
-languaje: cpp
+languaje: c++
 script: 
   - make
   - ./bin/main -a
