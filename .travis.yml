@@ -1,2 +1,4 @@
 languaje: cpp
-script: make
+script: 
+  - make
+  - ./bin/main -a
